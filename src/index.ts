@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /// <reference types="node" />
 import * as chalk from "chalk";
 import * as program from "commander";
