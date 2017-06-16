@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import * as fs from "fs";
 import * as gulp from "gulp";
 import * as filter from "gulp-filter";
