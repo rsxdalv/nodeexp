@@ -13,6 +13,7 @@
     "commander": "^2.9.0"
   },
   "devDependencies": {
+    "@types/commander": "^2.9.1",
     "@types/node": "^7.0.31",
     "gulp": "^3.9.1",
     "gulp-filter": "^5.0.0",
