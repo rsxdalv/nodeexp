@@ -22,8 +22,8 @@ gulp.task("tsc", () => {
         .pipe(gulp.dest("./"))
         .pipe(testFiles)
         .pipe(mocha({
-            require: "./utils/mocha.js",
             R: process.env.MOCHA_MIN ? "min" : null,
+            require: "./utils/mocha.js",
         }, null));
     return stream;
 });
