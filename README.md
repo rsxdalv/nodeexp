@@ -4,12 +4,12 @@ A simple command line tool for replacing text in files using regular expressions
 
 ## Requirements
 - Node.js 
-- npm 
+- yarn
 
 ## Installation
 1. Clone this repository to your local machine
 2. Navigate to the root directory of the cloned repository
-3. Run `npm install` to install the necessary dependencies
+3. Run `yarn install` to install the necessary dependencies
 
 ## Usage
 The tool can be run by executing the following command in the terminal:

@@ -2,9 +2,17 @@
   "name": "rsx_nodeexp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.ts",
+  "main": "dist/rsx_nodeexp.js",
+  "bin": {
+    "rsx_nodeexp": "dist/rsx_nodeexp.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch",
+    "build": "microbundle",
+    "watch": "microbundle watch",
+    "lint": "eslint .",
+    "prettier": "prettier --write 'src/**/*.ts' 'src/**/*.js'"
   },
   "author": "",
   "license": "ISC",
@@ -13,14 +21,20 @@
     "commander": "^2.9.0"
   },
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
     "@types/commander": "^2.9.1",
     "@types/node": "^7.0.31",
-    "gulp": "^3.9.1",
-    "gulp-filter": "^5.0.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "gulp-spawn-mocha": "^3.3.0",
-    "gulp-typescript": "^3.1.7",
-    "mocha": "^3.4.2",
-    "typescript": "^2.3.4"
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-config-eslint": "^7.0.0",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "trailingComma": "all",
+    "tabWidth": 2
   }
 }
