@@ -1,9 +1,10 @@
 {
   "name": "@rsxlv/nodeexp",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A package for replacing text in multiple files.",
   "source": "src/index.ts",
   "main": "dist/rsx_nodeexp.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "rsx_nodeexp": "dist/rsx_nodeexp.js"
   },
@@ -14,11 +15,15 @@
     "lint": "eslint .",
     "prettier": "prettier --write 'src/**/*.ts' 'src/**/*.js'"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Roberts Slisans",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsxdalv/nodeexp.git"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
