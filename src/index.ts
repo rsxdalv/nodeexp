@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /// <reference types="node" />
-import * as chalk from "chalk";
-import * as program from "commander";
+import chalk from "chalk";
+import program from "commander";
 import { readFile, writeFile } from "fs";
 
 export function replaceInFiles(
